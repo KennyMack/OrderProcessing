@@ -5,22 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OrderProcessing.Customer.Controllers
+namespace OrderProcessing.Products.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(new Customer().GetDummy());
-        }
-
-        [HttpPost]
-        public IActionResult Post()
-        {
-            return Ok(new Customer().GetDummy().First());
+            return Ok(new Products().GetDummy());
         }
     }
 }

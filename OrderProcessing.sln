@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Gateway", "OrderProcessing.Gateway\OrderProcessing.Gateway.csproj", "{22EB27CF-16F5-4293-A965-855554EC227C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Order", "OrderProcessing.Order\OrderProcessing.Order.csproj", "{61408BCC-F2E0-4DE1-8450-A9C5A006F215}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing.Customer", "OrderProcessing.Customer\OrderProcessing.Customer.csproj", "{511C637F-3536-4C35-8A0F-CF51B085526D}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{22EB27CF-16F5-4293-A965-855554EC227C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22EB27CF-16F5-4293-A965-855554EC227C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22EB27CF-16F5-4293-A965-855554EC227C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22EB27CF-16F5-4293-A965-855554EC227C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61408BCC-F2E0-4DE1-8450-A9C5A006F215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61408BCC-F2E0-4DE1-8450-A9C5A006F215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61408BCC-F2E0-4DE1-8450-A9C5A006F215}.Release|Any CPU.ActiveCfg = Release|Any CPU

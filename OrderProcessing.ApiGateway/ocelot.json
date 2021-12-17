@@ -9,7 +9,15 @@
           "Port": 5020
         }
       ],
-      "UpstreamPathTemplate": "/catalog-service/catalog"
+      "UpstreamPathTemplate": "/api/products",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "DownstreamPathTemplate": "/api/customer",
@@ -17,17 +25,37 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5020
+          "Port": 5010
         }
       ],
-      "UpstreamPathTemplate": "/customer-service/customer",
+      "UpstreamPathTemplate": "/api/customer",
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
-      }
+      },
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orders",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "DownstreamPathTemplate": "/api/customer/{id}",
